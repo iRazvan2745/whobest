@@ -14,10 +14,30 @@ whobest is a powerful tool designed for performance testing of Redis databases. 
 * Redis or compatible databases (DragonflyDB, KeyDB)
 * Go modules enabled
 
-## Installation
+## Usage
 
-To install whobest, clone the repository and navigate to the project directory:
+To use whobest, clone the repository and navigate to the project directory:
 ```
 go mod tidy
 go run main.go
 ```
+
+
+Results of DragonFlyDB vs KeyDB vs Redis :
+
+(Tested on a i5-14400F cpu)
+
+DragonflyDB:
+  - Total Operations: 2244541
+  - Errors: 0
+  - Successful Operations: 2244541
+
+KeyDB:
+  - Total Operations: 2255358
+  - Errors: 0
+  - Successful Operations: 2255358
+
+Redis:
+  - Total Operations: 2054570
+  - Errors: 0
+  - Successful Operations: 2054570
